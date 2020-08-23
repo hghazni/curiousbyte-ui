@@ -1,7 +1,47 @@
 html, body {
-    background: rgb(39, 38, 38);
+    background: #494949;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    border: 5px dashed red;
+.nav {
+    color: white;
+    background: #272626;
+    max-width: 80px;
+    height: 100vh;
+    margin: 0;
+
+    ul {
+        display: none;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .nav__firstLayer {
+        display: block;
+        padding: 0;
+         
+        li {
+            display: block;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            width: 100%;
+
+            &.active {
+                border-left: 5px solid red;
+            }
+
+            .fas {
+                color: white;
+            }
+
+            &:hover {
+                background-color: purple;
+                cursor: pointer;
+            }
+        }
+    }
 }

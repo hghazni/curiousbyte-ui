@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+html, body {
+  background-color: #1C1B20;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 600px;
+  margin: auto;
+}
+  
+.card {
+  display: inline-block;
+  background: #25262C;
+  border-left: 6px solid #424047;
+  border-radius: 3px;
+  max-width: 150px;
+  width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+  height: 100%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  transition: ease-in-out 0.25s;
+  margin: 8px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    background-color: orange;
+    width: 3px;
+    height: 15px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+  }
+}
+
+.inner {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 8px;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.label {
+  margin-left: 16px;
+  font-size: 11px;
+}
+
+.moreOptions {
+  all: unset;
+  position: relative;
+  right: 20px;
+  color: #959596;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.footer {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.firstName {
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.surName {
+  font-weight: 500;
+  margin-top: 0;
+}
